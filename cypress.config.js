@@ -21,6 +21,10 @@ module.exports = defineConfig({
 
                 lerPasta(caminho) {
                     return fs.readdirSync(caminho).length
+                },
+
+                lerEmail() {
+                    return process.env.email
                 }
             })
         },
