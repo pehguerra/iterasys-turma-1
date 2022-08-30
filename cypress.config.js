@@ -6,6 +6,12 @@ module.exports = defineConfig({
         baseUrl: 'https://conexaoqa.herokuapp.com',
         viewportHeight: 1080,
         viewportWidth: 1920,
+        defaultCommandTimeout: 8000,
+        requestTimeout: 10000,
+        retries: {
+            runMode: 2,
+            openMode: 0
+        },
 
         // eslint-disable-next-line
         setupNodeEvents(on, config) {

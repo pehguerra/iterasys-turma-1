@@ -80,7 +80,7 @@ describe('cabeçalho home page', () => {
     context('logado', () => {
         
         before(() => {
-            
+
             const login = new LoginPage()
 
             login.visitar()
