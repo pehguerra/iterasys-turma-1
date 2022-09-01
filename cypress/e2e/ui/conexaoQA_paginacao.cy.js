@@ -1,4 +1,4 @@
-describe('Paginação QAs', () => {
+describe('Paginação QAs', { tags: '@regressao' }, () => {
 
     const paginacao = () => cy.get('.paginationBttns li')
     const URL_API = '/api/profile'
@@ -15,7 +15,7 @@ describe('Paginação QAs', () => {
     
     it('valida 7 perfis', () => {
         
-        cy.intercept(URL_METHOD, URL_API, { fixture: 'paginacao_7_usuarios.json' })
+        cy.intercept(URL_METHOD, URL_API, { fixture: 'paginacao_7_usuarios' })
             .as('perfis')
 
         cy.visit('/perfis')

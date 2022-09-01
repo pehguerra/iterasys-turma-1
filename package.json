@@ -11,6 +11,7 @@
   "license": "ISC",
   "dependencies": {
     "cypress": "^10.4.0",
+    "cypress-grep": "^3.0.2",
     "eslint": "^8.22.0",
     "eslint-plugin-cypress": "^2.12.1"
   }

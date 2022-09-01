@@ -13,7 +13,7 @@ describe('Valida a página de QAs', () => {
             cy.visit('/perfis')
         })
     
-        it('valida se a página carregou com espera de elemento', () => {
+        it('valida se a página carregou com espera de elemento', { tags: '@flaky' }, () => {
 
             cy.contains('h1', 'perfis', { matchCase: false, timeout: 15000 })
                 .should('be.visible') // exist ou be.visible
